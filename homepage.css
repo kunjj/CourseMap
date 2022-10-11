@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* background img css start */
+#img{
+    background-color: #444;
+    background-image: url(imgs/homepageBackground.jfif);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 89vh;
+    color: #fff;
+    padding: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 4rem;
+    color: #0f9;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    outline: 3px solid var(--white);
+    outline-offset: 0.25em;
+    display: inline-block;
+    margin: 0.25em 0.5em;
+}
+h1 span {
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 0.75rem;
+}
+
+p span {
+    color: #0f9;
+}
+/* background img css end */
+
+/* membership container css start */
+/* .membership-container{
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+    margin-top: 0.05rem;
+    margin-bottom: 1.25rem;
+    background-color: #a4a4a4;
+}
+.topBox{
+    width: 20vw;
+    height: 35vh;
+    background: #fff1f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    box-shadow: 0 10px 5px rgba(100,100,100,0.75);;
+    border-radius: .5rem;
+    font-size: 2rem;
+    margin: 0.025rem 4rem;
+}
+.topBox h4{
+    margin-bottom: .75rem;
+    font-size: 1.75rem;
+    text-decoration: underline;
+}
+.topBox p{
+    font-size: 2rem;
+    font-weight: 600;
+    
+}
+.topBox a{
+    text-decoration: none;
+    color: #6b6a6a;
+}
+.topBox:hover{
+    box-shadow: 10px 20px 10px rgba(100,100,100);;
+}
+.topBox a:hover{
+    color: #0020ff;
+} */
+/* membership container css end */

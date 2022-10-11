@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div class="container">
+        <h2>Check Number Is Armstrong Or Not</h2>
+        <input type="text" name="" id="armstrongNumber" placeholder="Enter Number">
+        <input type="button" value="Check" onclick="armstrong()">
+    </div>
+    <div class="container">
+        <h2>Check Number Is Pallindrome Or Not</h2>
+        <input type="text" name="" id="pallindromeString" placeholder="Enter Number">
+        <input type="button" value="Check" onclick="pallindrome()">
+    </div>
+
+
+    <script>
+        function armstrong() {
+            let number = document.getElementById("armstrongNumber").value;
+            let remainder = 0, sum = 0, tempNumber = number;
+            while (number > 0) {
+                remainder = number % 10;
+                sum = sum + (remainder * remainder * remainder);
+                number = parseInt(number / 10);
+            }
+            console.log(sum);
+            if (tempNumber == sum)
+                alert(tempNumber + " Is Armstrong Number!");
+            else
+                alert(tempNumber + " Is Not Armstrong Number!");
+
+        }
+        function pallindrome(){
+            let input = document.getElementById("pallindromeString").value;
+            // let remainder = 0, sum = 0, tempNumber = number;
+            // while (number > 0) {
+            //     remainder = number % 10;
+            //     sum = sum*10 + (remainder);
+            //     number = parseInt(number / 10);
+            // }
+            // if (tempNumber == sum)
+            //     alert(tempNumber + " Is Pallindrome Number!");
+            // else
+            //     alert(tempNumber + " Is Not Armstrong Number!");
+            
+            let tempstr = "";
+            for(let i=input.length; i>= 0; i--){
+                // tempstr.concat(input[i]);
+                tempstr = tempstr + input.charAt(i);
+            }
+            console.log(tempstr.length);
+            if (tempstr == input)
+                alert(input + " Is Pallindrome!");
+            else
+                alert(input + " Is Not Pallindrome!");
+        }
+    </script>
+</body>
+</html>

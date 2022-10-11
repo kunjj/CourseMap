@@ -1,0 +1,21 @@
+/* navbar css start */
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.nav-item {
+    margin: 0px 15px;
+}
+
+.nav-link {
+    padding: 10px;
+    color: #ffe2e2;
+}
+
+.nav-link:hover {
+    color: #ffc107;
+    text-decoration: underline;
+}
+/* navbar css end */
